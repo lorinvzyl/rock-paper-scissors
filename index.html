@@ -3,8 +3,38 @@
     <head>
         <title>Rock Paper Scissors</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div class="header">
+            <!--Contain game name and score-->
+            <div class="title">Rock Paper Scissors</div>
+            <div class="scoreContainer">
+                <div class="scoreGroup">
+                    <div class="playerScoreName">Player</div>
+                    <div id="player" class="playerScore">0</div>
+                </div>
+                <div class="scoreGroup">
+                    <div class="playerScoreName">Computer</div>
+                    <div id="computer" class="playerScore">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <!--Contain buttons for user to click-->
+            <div class="wepGroup">
+                <button id="rock" class="rpsButton"></button>
+                <div class="text"></div>
+            </div>
+            <div class="wepGroup">
+                <button id="paper" class="rpsButton"></button>
+                <div class="text"></div>
+            </div>
+            <div class="wepGroup">
+                <button id="scissors" class="rpsButton"></button>
+                <div class="text"></div>
+            </div>
+        </div>
         <script src="js/script.js"></script>
     </body>
 </html>

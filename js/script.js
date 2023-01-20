@@ -1,3 +1,10 @@
+const weapons = document.querySelectorAll(".rpsButton");
+weapons.forEach(weapon => {
+    let id = weapon.id;
+    document.getElementById(id).style.backgroundImage = `url('img/${id}.png')`;
+    weapon.addEventListener('click', playRound)}
+);
+
 function getComputerChoice()
 {
     var choice = Math.floor(Math.random() * 3);
@@ -13,9 +20,11 @@ function getComputerChoice()
     }
 }
 
-function playRound(playerSelection, computerSelection)
+function playRound(e)
 {
+    console.log(e.currentTarget.id);
 
+    /*
     if(playerSelection.toLowerCase() === "rock")
     {
         if(computerSelection === "Paper")
@@ -53,9 +62,9 @@ function playRound(playerSelection, computerSelection)
         } else {
             return 2
         }
-    }
+    }*/
 }
-
+/*
 function game() {
     let userScore = 0;
     let computerScore = 0;
@@ -75,6 +84,5 @@ function game() {
         return "Computer wins!";
     else
         return "it's a tie!";
-}
+}*/
 
-console.log(game());

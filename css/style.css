@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    background-color: #ccb39c;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.header, .main {
+    background-image: url("../img/canvas.png");
+    background-position: center;
+    border: 6px solid #4c2e11;
+}
+
+.scoreContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.scoreGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    height: 200px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-size: cover;
+}
+
+.wepGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.text {
+    min-height: 20px;
+}
+
+.rpsButton {
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+    width: 150px;
+}
