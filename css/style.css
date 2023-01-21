@@ -65,9 +65,52 @@ body {
     border: none;
     border-radius: 50%;
     background-color: transparent;
-    background-size: contain;
+    background-size:  contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 150px;
     width: 150px;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    background-color: #ccb39c;
+    border: 2px solid #4c2e11;
+    gap: 16px;
+}
+
+.restart {
+    padding: 3px;
+}
+
+.computerStyle {
+    border: 3px solid red;
+}
+
+.playerStyle {
+    border: 3px solid green;
+}
+
+.computerStyle, .playerStyle, .tie {
+    transition: all 1.5s;
+}
+
+.tie {
+    border: 3px solid yellow;
 }
